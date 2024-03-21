@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ratan</groupId>
-	<artifactId>core</artifactId>
+	<artifactId>core</artifactId>	
 	<version>0.0.1-SNAPSHOT</version>
 	<name>core</name>
 	<description>Demo project for Spring Boot</description>
