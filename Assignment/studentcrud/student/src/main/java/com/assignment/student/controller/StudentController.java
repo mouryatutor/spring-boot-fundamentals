@@ -1,5 +1,8 @@
 package com.assignment.student.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +16,13 @@ import com.assignment.student.repos.StudentRepo;
 public class StudentController {
     
     // CRUD functions for students
-    private StudentRepo repository;
+    @Autowired
+    StudentRepo repository;
+
+    @RequestMapping(value = "/students", method = RequestMethod.GET)
+    public List<Student> findStudent(){
+        return repository.findAll();
+    }
 
     @RequestMapping(value = "/student", method = RequestMethod.POST)
     public Student addStudent(@RequestBody Student student){
