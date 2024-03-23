@@ -5,5 +5,3 @@ CREATE USER 'rattu'@'localhost' IDENTIFIED BY "rattu"
 GRANT ALL PRIVILEGES ON *.* TO 'rattu'@'localhost';
 
 FLUSH PRIVILEGES;
-
-GRANT ALL ON *.* TO ''@'localhost';

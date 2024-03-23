@@ -28,3 +28,6 @@ apt search  mysql-server
 sudo apt-get purge mysql*
 
 sudo mysql -u rattu -p
+
+acces deined error resource
+https://phoenixnap.com/kb/access-denied-for-user-root-localhost
