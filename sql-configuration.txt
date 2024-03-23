@@ -26,3 +26,5 @@ apt search  mysql-server
 
 // remove mysql files completely
 sudo apt-get purge mysql*
+
+sudo mysql -u rattu -p
