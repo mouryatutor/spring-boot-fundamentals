@@ -1,4 +1,6 @@
+-- CREATE DATABASE mydb;
 use mydb;
+
 
 create table product(
 id int auto_increment PRIMARY KEY,
