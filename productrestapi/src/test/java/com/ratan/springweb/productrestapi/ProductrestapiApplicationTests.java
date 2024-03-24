@@ -18,7 +18,7 @@ class ProductrestapiApplicationTests {
 
 	@Test
 	public void testGetProducts() {
-
+		System.out.println("baseURL :  " + baseURL);
 		RestTemplate restTemplate = new RestTemplate();
 		Product product = restTemplate.getForObject(baseURL + "3", Product.class);
 		assertNotNull(product);
