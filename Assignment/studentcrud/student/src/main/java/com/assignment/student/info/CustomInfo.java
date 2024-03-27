@@ -3,7 +3,6 @@ package com.assignment.student.info;
 import org.springframework.boot.actuate.info.Info.Builder;
 import org.springframework.stereotype.Component;
 
-import javax.sound.midi.MidiDevice.Info;
 
 import org.springframework.boot.actuate.info.InfoContributor;
 
