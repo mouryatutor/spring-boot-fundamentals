@@ -4,6 +4,13 @@ public class Student {
     
     public String name;
     public Integer score;
+
+    
+
+    public Student(String name, Integer score) {
+        this.name = name;
+        this.score = score;
+    }
     
     public String getName() {
         return name;

@@ -1,5 +1,7 @@
 package com.ratan.thymeleafdemo.controllers;
 
+import java.util.Arrays;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -23,13 +25,23 @@ public class HelloController {
     }
 
     @RequestMapping("/student")
-    public ModelAndView getStudents()
+    public ModelAndView getStudent()
     {
         ModelAndView mav = new ModelAndView("student");
-        Student student = new Student();
-        student.setName("Ratan Mourya");
-        student.setScore(100);
+        Student student = new Student("Ratan Mourya",100);
         mav.addObject("student", student);
+        return mav;
+        
+    }
+
+
+    @RequestMapping("/students")
+    public ModelAndView getStudents()
+    {
+        ModelAndView mav = new ModelAndView("studentList");
+        Student student1 = new Student("Ratan Mourya",100);
+        Student student2 = new Student("Devendra Mourya", 200);
+        mav.addObject("students", Arrays.asList(student1,student2));
         return mav;
         
     }
