@@ -11,6 +11,12 @@ public class Student {
         this.name = name;
         this.score = score;
     }
+
+    public Student()
+    {
+        this.name = "";
+        this.score = 0;
+    }
     
     public String getName() {
         return name;

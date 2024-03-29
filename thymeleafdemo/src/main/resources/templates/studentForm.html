@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+<body>
+    <form th:object="${student}">
+        Student Name : <input type="text" th:field="*{name}">
+        Student Score : <input type="text" th:field="*{score}">
+        <input type="submit" value="Save">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

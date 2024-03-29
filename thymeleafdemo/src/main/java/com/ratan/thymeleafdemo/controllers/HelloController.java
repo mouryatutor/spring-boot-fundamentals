@@ -45,5 +45,13 @@ public class HelloController {
         return mav;
         
     }
+
+    @RequestMapping("/studentForm")
+    public ModelAndView displayStudentForm() {
+        ModelAndView mav = new  ModelAndView("studentForm");
+        Student student = new Student("Somya",100);
+        mav.addObject("student",student);
+        return mav;
+    }
     
 }
