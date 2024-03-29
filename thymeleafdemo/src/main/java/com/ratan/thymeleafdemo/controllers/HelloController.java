@@ -3,6 +3,7 @@ package com.ratan.thymeleafdemo.controllers;
 import java.util.Arrays;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -51,6 +52,12 @@ public class HelloController {
         ModelAndView mav = new  ModelAndView("studentForm");
         Student student = new Student("Somya",100);
         mav.addObject("student",student);
+        return mav;
+    }
+
+    @RequestMapping("/saveStudent")
+    public ModelAndView addStundent(@ModelAttribute Student student){
+        ModelAndView mav = new ModelAndView("result");
         return mav;
     }
     
